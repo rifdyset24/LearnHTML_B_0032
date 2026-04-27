@@ -1,53 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Pertemuan 2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
 
 <body>
     <header>
-        <p>This Is Header</p>
-        <div>
+        <h1>Rifdy Setyadi <span class="accent">.</span></h1>
+        <nav>
             <a href="#about-me"> Profile</a>
             <a href="#project"> Project</a>
             <a href="#Skill"> Skill</a>
             <a href="#Contact"> Contact</a>
-        </div>
+            <a href="#Riwayat Pendidikan"> Pendidikan</a>
+            <a href="#Riwayat Pekerjaan"> Pekerjaan</a>
+        </nav>
     </header>
 
     <main>
         <section id="about-me">
-
-            <h2>About Me</Menu></h2>
-            <p>Hello<br>my name is Joko</p>
-            
+            <div class= "hero-kiri">
+            <h2>About Me</h2>
+            <p>Hello<br />my name is Joko</p>
             
             <p> Iam a software engineer</p>
-            <p> Iam a software engineer</p>
+            <p> Iam a Informatic UISI</p>
 
-            <img src="uisi.png" height="100px" width="100px">
+            <div class="hero-tombol">
+                <button class="btn-primary">Got a project </button>
+                <button class="btn-outline">My resume</button>
+            </div>
+        </div>
+
+        <div class="hero-kanan">
+          <div class="hero-img-wrapper">
+            <img src="c:\Users\Lenovo\Downloads\me.jpeg" alt="" />
+          </div>
+        </div>
         </section>
 
         <section id="project">
             <h2>My Projects</h2>
 
-            <article>
+            <div class="project-grid">
+                <article>
+                    <div class="project-img">
+                        <img src="c:\Users\Lenovo\Downloads\pos.jpg" alt="" />
+                    </div>
+            
+                <div class="project-body">
                 <h3>Company Profile</h3>
                 <p>This is Website Business Company Profile</p>
-                <img src="uisi.png" height="80px" width="10px">
+                </div>
 
                 <button>Lihat Project</button>
-            </article>
-
-            <article>
-                <h3>Inventory</h3>
-                <p>This is Website Inventory</p>
-                <img src="uisi.png" width="80px" height="10px">
-                
-            </article>
+                </article>
+                </div>
         </section>
 
         <section id="Skill">
@@ -64,29 +75,46 @@
 
             <article>
                 <p>No. Telp: </p>
-                <p>Email: </p>
+                <p>Email: <a href="mailto:example@email.com">example@email.com</a> </p>
                 <p>Instagram: </p>
             </article>
 
-            <h2>Send Me Message</h2>
+          <section id="Riwayat Pendidikan">
+            <h2>Riwayat Pendidikan</h2>
+            <ul>
+                <li>SDN GEDONGOMBO 01 </li>
+                <li>SMP NEGERI 6 TUBAN</li>
+                <li>SMA NEGERI 1 TUBAN</li>
+                <li>UNIVERSITAS INTERNASIONAL SEMEN INDONESIA</li>
+            </ul>
+          </section>
 
-            <form action="">
+            <section id="Riwayat Pekerjaan">
+            <h2>Riwayat Pekerjaan</h2>
+            <ul>
+                <li>INFORMATIC ENGINEER PT. PETROKIMIA  </li>
+                <li>SOFTWARE DEVELOPMENT UISI</li>
+            </ul>
+            </sectionid>
+
+            <h2>Send Me Message</h2>
+             <form action="">
                 <div>
-                    <label for="name">Name</label>
-                    <input type="text" id="name", name="name", placeholder="input your name">
+                <label for="name">Name</label>
+                <input type="text" id="name", name="name", placeholder="input your name"/>
                 </div>
-                <br>
+                <br />
                 <div>
                     <label for="message">Message</label>
                     <input type="text" id="message", name="message", placeholder="input your message">
                 </div>
-                <br>
+                <br />
 
                 <button>Submit</button>
-
-            </form>
-
+             </form>
         </section>
+        <br><br />
+
 
     </main>
 
